@@ -1,0 +1,98 @@
+/* Base page */
+:root{
+  --blue: #0096ff;
+  --yellow: #ffb200;
+  --white: #ffffff;
+}
+
+*{box-sizing:border-box}
+html,body{
+  height:100%;
+  margin:0;
+  padding:0;
+  font-family: Arial, sans-serif;
+  background: var(--blue);
+  color: var(--white);
+}
+
+/* Top banner */
+.top-banner{
+  background: var(--yellow);
+  padding: 40px 0;
+  text-align: center;
+}
+
+.title{
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.1;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+.shop{ color: var(--white); }
+
+/* Main container */
+.container{
+  text-align: center;
+  background: var(--blue);
+  padding: 80px 20px;
+  min-height: 60vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+}
+
+/* Logo */
+.logo{
+  width:140px;
+  margin-bottom:20px;
+  border-radius:15px;
+}
+
+/* Links vertical */
+.links-vertical{
+  display:flex;
+  flex-direction:column;
+  gap:35px;
+  margin-top:40px;
+  width:100%;
+  max-width:360px;
+  align-items:center;
+}
+
+.links-vertical a{
+  text-decoration:none;
+  font-size:28px;
+  font-weight:900;
+  color:var(--white);
+  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+  width:100%;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  padding:12px 20px;
+  border-radius:10px;
+}
+
+/* Button-like style for social links */
+.links-vertical a#fb,
+.links-vertical a#insta,
+.links-vertical a#whatsapp,
+.links-vertical a#tiktok{
+  background: var(--white);
+  color: var(--blue);
+  font-weight:700;
+}
+
+/* Hover + active interactions */
+.links-vertical a:hover{
+  transform: scale(1.05);
+  background: #ffd700; /* gold on hover */
+  color: #000;
+}
+
+.links-vertical a:active{
+  transform: scale(0.95);
+}
