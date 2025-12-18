@@ -1,117 +1,92 @@
-/* Base page */
 :root{
-  background: linear-gradient(to right, #5de0e6, #004aad);
-  --yellow: #ffb200;
-  --white: #ffffff;
+  --blue-dark:#004aad;
+  --blue-light:#5de0e6;
+  --yellow:#ffb200;
+  --white:#ffffff;
 }
 
-*{box-sizing:border-box}
-html,body{
-  height:100%;
+*{
+  box-sizing:border-box;
   margin:0;
   padding:0;
-  font-family: Arial, sans-serif;
-  background: var(--blue);
+}
+
+body{
+  font-family: 'Arial', sans-serif;
+  min-height:100vh;
+  background: linear-gradient(to bottom, var(--blue-light), var(--blue-dark));
   color: var(--white);
-}
-
-/* Top banner */
-.top-banner{
-  background: var(--yellow);
-  padding: 40px 0;
-  text-align: center;
-}
-
-.title{
-  font-size: 48px;
-  font-weight: 900;
-  color: var(--white);
-  line-height: 1.1;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-}
-
-.shop{ color: var(--white); }
-
-/* Main container */
-.container{
-  text-align: center;
-  background: var(--blue);
-  padding: 80px 20px;
-  min-height: 60vh;
   display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:flex-start;
-}
-
-/* Logo */
-.logo{
-  width:250px;
-  margin-bottom:20px;
-  border-radius:15px;
-}
-
-/* Links vertical */
-.links-vertical{
-  display:flex;
-  flex-direction:column;
-  gap:35px;
-  margin-top:10px;
-  width:100%;
-  max-width:360px;
-  align-items:center;
-}
-
-.links-vertical a{
-  text-decoration:none;
-  font-size:28px;
-  font-weight:900;
-  color:var(--white);
-  transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
-  width:100%;
-  display:inline-flex;
   justify-content:center;
+}
+
+.app{
+  width:100%;
+  max-width:420px;
+  padding:24px 18px 32px;
+  display:flex;
+  flex-direction:column;
   align-items:center;
-  padding:12px 20px;
-  border-radius:10px;
 }
 
-/* Button-like style for social links */
-.links-vertical a#fb,
-.links-vertical a#insta,
-.links-vertical a#whatsapp,
-.links-vertical a#tiktok{
-  background: var(--white);
-  color: var(--blue);
+/* Header */
+.header{
+  text-align:center;
+  margin-bottom:30px;
+}
+
+.logo{
+  width:220px;
+  border-radius:18px;
+}
+
+.tagline{
+  margin-top:12px;
+  font-size:15px;
+  opacity:0.9;
+}
+
+/* Links */
+.links{
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  padding:14px;
+  font-size:18px;
   font-weight:700;
+  text-decoration:none;
+  border-radius:14px;
+  background:var(--white);
+  color:var(--blue-dark);
+  transition:transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* Hover + active interactions */
-.links-vertical .btn-fb:hover{
-  transform: scale(1.05);
-  background: #1877F2
-; /* gold on hover */
-  color: #ffffff;
+.btn i{
+  font-size:20px;
 }
-.links-vertical .btn-insta:hover{
-  transform: scale(1.05);
-  background: #bb21cf
-; /* gold on hover */
-  color: #ffffff;
-}
-.links-vertical .btn-whatsapp:hover{
-  transform: scale(1.05);
-  background: #25D366
 
-; /* gold on hover */
-  color: #ffffff;
+/* Brand colors */
+.fb:hover{ background:#1877F2; color:white; }
+.insta:hover{ background:#c13584; color:white; }
+.whatsapp:hover{ background:#25D366; color:white; }
+.tiktok:hover{ background:#000000; color:white; }
+
+.btn:active{
+  transform:scale(0.95);
 }
-.links-vertical .btn-tiktok:hover{
-  transform: scale(1.05);
-  background: #000000
-; /* gold on hover */
-  color: #ffffff;
-}
-.links-vertical a:active{
-  transform: scale(0.95);
+
+/* Footer */
+.footer{
+  margin-top:28px;
+  font-size:12px;
+  opacity:0.7;
 }
