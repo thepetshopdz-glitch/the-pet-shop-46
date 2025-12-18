@@ -1,6 +1,6 @@
 /* Base page */
 :root{
-  --blue: #0096ff;
+  background: linear-gradient(to right, #5de0e6, #004aad);
   --yellow: #ffb200;
   --white: #ffffff;
 }
@@ -46,7 +46,7 @@ html,body{
 
 /* Logo */
 .logo{
-  width:140px;
+  width:250px;
   margin-bottom:20px;
   border-radius:15px;
 }
@@ -56,7 +56,7 @@ html,body{
   display:flex;
   flex-direction:column;
   gap:35px;
-  margin-top:40px;
+  margin-top:10px;
   width:100%;
   max-width:360px;
   align-items:center;
@@ -87,12 +87,31 @@ html,body{
 }
 
 /* Hover + active interactions */
-.links-vertical a:hover{
+.links-vertical .btn-fb:hover{
   transform: scale(1.05);
-  background: #ffd700; /* gold on hover */
-  color: #000;
+  background: #1877F2
+; /* gold on hover */
+  color: #ffffff;
 }
+.links-vertical .btn-insta:hover{
+  transform: scale(1.05);
+  background: #bb21cf
+; /* gold on hover */
+  color: #ffffff;
+}
+.links-vertical .btn-whatsapp:hover{
+  transform: scale(1.05);
+  background: #25D366
 
+; /* gold on hover */
+  color: #ffffff;
+}
+.links-vertical .btn-tiktok:hover{
+  transform: scale(1.05);
+  background: #000000
+; /* gold on hover */
+  color: #ffffff;
+}
 .links-vertical a:active{
   transform: scale(0.95);
 }
